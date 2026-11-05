@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Protecta Consulting SST-MA · Consultoría SST y ambiental para interventoría y construcción</title>
+<meta name="description" content="Consultoría en seguridad y salud en el trabajo (SST) y medio ambiente (MA) para interventorías y constructoras en Colombia. Organizamos la información, controlamos el cumplimiento cada mes y preparamos el informe para la entidad.">
+<meta name="theme-color" content="#12263A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Protecta Consulting SST-MA">
+<meta property="og:description" content="Cada proyecto en regla, antes de que llegue el informe. Consultoría SST-MA para interventoría y construcción.">
+<meta property="og:locale" content="es_CO">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root{
+  --noche:#12263A; --noche-2:#1B3550; --sst:#1C8EA8; --sst-texto:#11697D; --ma:#47A84C; --ma-texto:#2F7D34;
+  --fondo:#F6F8F7; --blanco:#FFFFFF; --linea:#DDE3E7; --texto:#1E2B36; --suave:#4A5A68;
+  --ambar:#B7791F; --rojo:#C0392B;
+  --radio:14px; --ancho:1160px;
+  --titulos:'Montserrat',system-ui,sans-serif; --cuerpo:'Source Sans 3',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--blanco);color:var(--texto);font-family:var(--cuerpo);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{display:block}
+a{color:var(--sst-texto)}
+a:hover{color:var(--noche)}
+h1,h2,h3{font-family:var(--titulos);color:var(--noche);line-height:1.15;margin:0}
+p{margin:0}
+.contenedor{max-width:var(--ancho);margin:0 auto;padding:0 24px}
+.saltar{position:absolute;left:-999px;top:8px;background:var(--noche);color:#fff;padding:10px 16px;border-radius:8px;z-index:20}
+.saltar:focus{left:16px}
+:focus-visible{outline:3px solid var(--sst);outline-offset:3px;border-radius:4px}
+
+/* Encabezado */
+.encabezado{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--linea)}
+.encabezado .contenedor{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+.marca{display:flex;align-items:center;gap:12px;text-decoration:none}
+.marca .nombre{font-family:var(--titulos);font-weight:800;letter-spacing:.04em;color:var(--noche);font-size:20px;line-height:1}
+.marca .sub{font-family:var(--titulos);font-weight:600;letter-spacing:.28em;color:var(--ma-texto);font-size:9.5px;margin-top:4px;display:block}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a{font-family:var(--titulos);font-weight:600;font-size:15px;color:var(--texto);text-decoration:none}
+.nav a:hover{color:var(--sst-texto)}
+.boton{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font-family:var(--titulos);font-weight:700;font-size:15px;text-decoration:none;border:2px solid transparent;transition:background .15s,color .15s,border-color .15s}
+.boton-primario{background:var(--noche);color:#fff}
+.boton-primario:hover{background:var(--noche-2);color:#fff}
+.boton-claro{background:#fff;color:var(--noche)}
+.boton-claro:hover{background:var(--fondo);color:var(--noche)}
+.boton-borde{border-color:var(--noche);color:var(--noche);background:transparent}
+.boton-borde:hover{background:var(--noche);color:#fff}
+.nav .boton{color:#fff;padding:0 18px;min-height:44px}
+
+/* Portada */
+.portada{background:var(--fondo);overflow:hidden}
+.portada .contenedor{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding-top:88px;padding-bottom:96px}
+.antetitulo{font-family:var(--titulos);font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--ma-texto);margin-bottom:18px}
+.portada h1{font-size:clamp(36px,5vw,58px);font-weight:800;letter-spacing:-.01em}
+.portada h1 em{font-style:normal;color:var(--sst-texto)}
+.portada .entrada{font-size:20px;color:var(--suave);margin-top:24px;max-width:36em}
+.acciones{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.sello{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:40px;color:var(--suave);font-size:15px}
+.sello span{display:flex;align-items:center;gap:8px}
+.sello svg{flex:none}
+.escudo-grande{justify-self:center;width:min(360px,80%);filter:drop-shadow(0 24px 40px rgba(18,38,58,.18))}
+
+/* Secciones */
+section{scroll-margin-top:80px}
+.seccion{padding:96px 0}
+.seccion-oscura{background:var(--noche);color:#E4ECF2}
+.seccion-oscura h2,.seccion-oscura h3{color:#fff}
+.seccion-gris{background:var(--fondo)}
+.cabeza{max-width:720px;margin-bottom:48px}
+.cabeza h2{font-size:clamp(28px,3.4vw,40px);font-weight:800}
+.cabeza p{margin-top:16px;color:var(--suave);font-size:19px}
+.seccion-oscura .cabeza p{color:#B8C7D3}
+.seccion-oscura .antetitulo{color:#8FD6C9}
+
+/* Problema */
+.tres{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.dolor{padding:28px;border-radius:var(--radio);background:#fff;border:1px solid var(--linea)}
+.dolor h3{font-size:19px;margin:16px 0 8px}
+.dolor p{color:var(--suave);font-size:17px}
+.icono{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#E6F2F5;color:var(--sst-texto)}
+.icono.verde{background:#E7F3E8;color:var(--ma-texto)}
+
+/* Servicios */
+.servicios{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.servicio{padding:32px;border-radius:var(--radio);background:#fff;border:1px solid var(--linea);display:flex;flex-direction:column;gap:12px}
+.servicio .num{font-family:var(--titulos);font-weight:800;font-size:14px;letter-spacing:.12em;color:var(--sst-texto)}
+.servicio h3{font-size:22px}
+.servicio p{color:var(--suave);font-size:17px}
+.servicio ul{margin:4px 0 0;padding-left:20px;color:var(--texto);font-size:16px}
+.servicio li{margin:4px 0}
+
+/* Plataforma */
+.plataforma{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.etiqueta{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:rgba(143,214,201,.14);color:#8FD6C9;font-family:var(--titulos);font-weight:700;font-size:13px;letter-spacing:.06em}
+.etiqueta::before{content:"";width:8px;height:8px;border-radius:50%;background:#8FD6C9}
+.plataforma h2{font-size:clamp(28px,3.4vw,40px);font-weight:800;margin-top:18px}
+.plataforma .entrada{margin-top:16px;color:#B8C7D3;font-size:19px}
+.lista-check{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:14px}
+.lista-check li{display:flex;gap:12px;align-items:flex-start;color:#E4ECF2}
+.lista-check svg{flex:none;margin-top:4px}
+.nota-hibrida{margin-top:28px;padding:18px 20px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#D6E1EA;font-size:16px}
+.nota-hibrida strong{color:#fff}
+
+.tablero{background:#fff;border-radius:18px;padding:22px;color:var(--texto);box-shadow:0 30px 60px rgba(0,0,0,.28)}
+.tablero-cabeza{display:flex;justify-content:space-between;align-items:center;padding-bottom:14px;border-bottom:1px solid var(--linea)}
+.tablero-cabeza b{font-family:var(--titulos);font-size:15px;color:var(--noche)}
+.tablero-cabeza span{font-size:13px;color:var(--suave)}
+.resumen{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}
+.resumen div{border-radius:10px;padding:12px;background:var(--fondo)}
+.resumen b{display:block;font-family:var(--titulos);font-size:24px;color:var(--noche)}
+.resumen span{font-size:13px;color:var(--suave)}
+.fila{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;padding:12px 4px;border-top:1px solid var(--linea)}
+.fila:first-of-type{border-top:0}
+.luz{width:14px;height:14px;border-radius:50%}
+.luz.v{background:var(--ma)} .luz.a{background:#E0A526} .luz.r{background:var(--rojo)}
+.fila .p{font-weight:600;font-size:15px;color:var(--noche)}
+.fila .d{font-size:13px;color:var(--suave)}
+.estado{font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.estado.v{background:#E7F3E8;color:#256B2A} .estado.a{background:#FBF0DA;color:#8A5A12} .estado.r{background:#F9E3E0;color:#9B2C20}
+.pie-tablero{font-size:12.5px;color:var(--suave);margin-top:12px;text-align:center}
+.pilotos{margin-top:56px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;padding:28px 32px;border-radius:var(--radio);background:var(--noche-2);border:1px solid rgba(255,255,255,.1)}
+.pilotos h3{font-size:22px}
+.pilotos p{color:#B8C7D3;margin-top:6px;font-size:17px;max-width:40em}
+
+/* Pasos */
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:paso;list-style:none;padding:0;margin:0}
+.paso{position:relative;padding-top:64px}
+.paso::before{counter-increment:paso;content:counter(paso);position:absolute;top:0;left:0;width:44px;height:44px;border-radius:50%;background:var(--noche);color:#fff;font-family:var(--titulos);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px}
+.paso::after{content:"";position:absolute;top:21px;left:56px;right:-12px;height:2px;background:var(--linea)}
+.paso:last-child::after{display:none}
+.paso h3{font-size:19px;margin-bottom:8px}
+.paso p{color:var(--suave);font-size:17px}
+
+/* Equipo */
+.equipo{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.persona{display:flex;gap:22px;padding:32px;border-radius:var(--radio);background:#fff;border:1px solid var(--linea)}
+.iniciales{flex:none;width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--titulos);font-weight:800;font-size:24px;color:#fff;background:var(--sst-texto)}
+.iniciales.b{background:var(--noche)}
+.persona h3{font-size:21px}
+.persona .rol{font-family:var(--titulos);font-weight:600;font-size:14px;color:var(--ma-texto);margin:4px 0 12px}
+.persona p{color:var(--suave);font-size:17px}
+
+/* Contacto */
+.contacto{background:var(--noche);color:#E4ECF2;border-radius:24px;padding:56px;display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center}
+.contacto h2{color:#fff;font-size:clamp(28px,3.4vw,40px);font-weight:800}
+.contacto p{color:#B8C7D3;margin-top:14px;font-size:19px}
+.contacto .datos{display:grid;gap:14px;justify-items:start}
+.contacto .correo{color:#fff;font-weight:600;font-size:18px;word-break:break-all}
+.contacto .lugar{color:#B8C7D3;font-size:16px}
+
+/* Pie */
+.pie{padding:48px 0 40px;border-top:1px solid var(--linea)}
+.pie .contenedor{display:grid;grid-template-columns:1fr 1.4fr;gap:32px;align-items:start}
+.pie small{display:block;color:var(--suave);font-size:14px;line-height:1.6}
+.pie .datos-personales{color:var(--suave);font-size:14px}
+
+/* Celular y tableta */
+@media (max-width:980px){
+  .nav a:not(.boton){display:none}
+  .portada .contenedor,.plataforma,.contacto{grid-template-columns:1fr}
+  .escudo-grande{width:120px;justify-self:start;order:-1}
+  .tres{grid-template-columns:1fr}
+  .pasos{grid-template-columns:repeat(2,1fr);row-gap:40px}
+  .paso:nth-child(2)::after{display:none}
+  .pie .contenedor{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  body{font-size:17px}
+  .contenedor{padding:0 16px}
+  .seccion{padding:72px 0}
+  .portada .contenedor{padding-top:48px;padding-bottom:64px;gap:28px}
+  .portada .entrada{font-size:18px}
+  .servicios,.equipo{grid-template-columns:1fr}
+  .pasos{grid-template-columns:1fr}
+  .paso::after{display:none}
+  .persona{flex-direction:column;padding:24px}
+  .servicio,.dolor{padding:24px}
+  .contacto{padding:32px 24px;border-radius:18px}
+  .pilotos{padding:24px}
+  .marca .sub{display:none}
+  .nav .boton{padding:0 14px;font-size:14px}
+  .resumen b{font-size:20px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<header class="encabezado">
+  <div class="contenedor">
+    <a class="marca" href="#inicio" aria-label="Protecta Consulting SST-MA, inicio">
+      <svg width="34" height="40" viewBox="0 0 120 140" aria-hidden="true">
+        <path d="M60 6 L108 24 V66 C108 98 86 122 60 134 C34 122 12 98 12 66 V24 Z" fill="#12263A"/>
+        <path d="M34 70 A26 26 0 0 1 86 70 Z" fill="#1C8EA8"/>
+        <path d="M60 44 V58" stroke="#12263A" stroke-width="4" stroke-linecap="round"/>
+        <path d="M28 72 H92" stroke="#1C8EA8" stroke-width="6" stroke-linecap="round"/>
+        <path d="M60 120 C40 110 38 90 60 82 C82 90 80 110 60 120 Z" fill="#47A84C"/>
+        <path d="M60 117 V88" stroke="#12263A" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <span><span class="nombre">PROTECTA</span><span class="sub">CONSULTING SST-MA</span></span>
+    </a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#servicios">Servicios</a>
+      <a href="#plataforma">Plataforma</a>
+      <a href="#como-trabajamos">Cómo trabajamos</a>
+      <a href="#equipo">Equipo</a>
+      <a class="boton boton-primario" href="#contacto">Contáctenos</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+<section class="portada" id="inicio" aria-labelledby="titulo-portada">
+  <div class="contenedor">
+    <div>
+      <p class="antetitulo">Consultoría SST-MA · Interventoría y construcción</p>
+      <h1 id="titulo-portada">Cada proyecto en regla, <em>antes de que llegue el informe.</em></h1>
+      <p class="entrada">Acompañamos a interventorías y constructoras en la gestión de seguridad y salud en el trabajo (SST) y medio ambiente (MA): organizamos la información, controlamos el cumplimiento cada mes y dejamos listo el informe para la entidad contratante.</p>
+      <div class="acciones">
+        <a class="boton boton-primario" href="mailto:protectaserv.col@gmail.com?subject=Quiero%20conversar%20sobre%20mis%20proyectos">Agendar una conversación</a>
+        <a class="boton boton-borde" href="#servicios">Ver servicios</a>
+      </div>
+      <div class="sello">
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F7D34" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>SST y ambiental en un solo equipo</span>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F7D34" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Varios proyectos a la vez</span>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F7D34" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Sus documentos se quedan en su nube</span>
+      </div>
+    </div>
+    <svg class="escudo-grande" viewBox="0 0 120 140" role="img" aria-label="Símbolo de Protecta: escudo con casco de seguridad y hoja">
+      <path d="M60 6 L108 24 V66 C108 98 86 122 60 134 C34 122 12 98 12 66 V24 Z" fill="#12263A"/>
+      <path d="M34 70 A26 26 0 0 1 86 70 Z" fill="#1C8EA8"/>
+      <path d="M60 44 V58" stroke="#12263A" stroke-width="4" stroke-linecap="round"/>
+      <path d="M28 72 H92" stroke="#1C8EA8" stroke-width="6" stroke-linecap="round"/>
+      <path d="M60 120 C40 110 38 90 60 82 C82 90 80 110 60 120 Z" fill="#47A84C"/>
+      <path d="M60 117 V88" stroke="#12263A" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
+  </div>
+</section>
+
+<section class="seccion" aria-labelledby="titulo-problema">
+  <div class="contenedor">
+    <div class="cabeza">
+      <p class="antetitulo">Lo que resolvemos</p>
+      <h2 id="titulo-problema">El informe mensual no debería ser una carrera contra el reloj</h2>
+      <p>En proyectos con muchos contratistas, la información SST-MA se dispersa y los faltantes aparecen cuando ya es tarde.</p>
+    </div>
+    <div class="tres">
+      <article class="dolor">
+        <div class="icono"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h6l2 2h10v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M3 7V5a2 2 0 0 1 2-2h4l2 2"/></svg></div>
+        <h3>Información dispersa</h3>
+        <p>Soportes repartidos entre correos, carpetas y memorias, sin una estructura común entre proyectos.</p>
+      </article>
+      <article class="dolor">
+        <div class="icono"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M17 11l2 2 3.5-3.5"/></svg></div>
+        <h3>Personal sin soportes al día</h3>
+        <p>Afiliaciones, aportes a seguridad social y documentos del personal de contratistas que no se revisan a tiempo.</p>
+      </article>
+      <article class="dolor">
+        <div class="icono verde"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9.5 13.5l5 5M14.5 13.5l-5 5"/></svg></div>
+        <h3>Informes devueltos</h3>
+        <p>Observaciones de la entidad por faltantes que se pudieron detectar semanas antes de radicar.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="seccion seccion-gris" id="servicios" aria-labelledby="titulo-servicios">
+  <div class="contenedor">
+    <div class="cabeza">
+      <p class="antetitulo">Servicios</p>
+      <h2 id="titulo-servicios">Consultoría SST-MA de principio a fin</h2>
+      <p>Trabajamos con la estructura de su proyecto y con el formato que exige su entidad contratante.</p>
+    </div>
+    <div class="servicios">
+      <article class="servicio">
+        <span class="num">01</span>
+        <h3>Diagnóstico y organización documental</h3>
+        <p>Revisamos el estado de la información SST-MA de sus proyectos en curso y la dejamos ordenada en una estructura estándar, dentro de su propia nube.</p>
+        <ul>
+          <li>Inventario de soportes y faltantes</li>
+          <li>Estructura de carpetas por proyecto y periodo</li>
+        </ul>
+      </article>
+      <article class="servicio">
+        <span class="num">02</span>
+        <h3>Gestión de SST del proyecto</h3>
+        <p>Acompañamiento en el Sistema de Gestión de Seguridad y Salud en el Trabajo conforme al Decreto 1072 de 2015 y la Resolución 0312 de 2019.</p>
+        <ul>
+          <li>Matriz documental y control del personal</li>
+          <li>Seguimiento a contratistas y hallazgos</li>
+        </ul>
+      </article>
+      <article class="servicio">
+        <span class="num">03</span>
+        <h3>Gestión ambiental de obra</h3>
+        <p>Seguimiento al cumplimiento ambiental del proyecto y de sus programas, con evidencias organizadas por periodo.</p>
+        <ul>
+          <li>Control de evidencias ambientales</li>
+          <li>Seguimiento a observaciones</li>
+        </ul>
+      </article>
+      <article class="servicio">
+        <span class="num">04</span>
+        <h3>Auditoría interna e informe mensual</h3>
+        <p>Revisión independiente antes de radicar y preparación del informe SST-MA consolidado para la entidad contratante.</p>
+        <ul>
+          <li>Lista de faltantes con responsable</li>
+          <li>Informe con estructura estándar</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="seccion seccion-oscura" id="plataforma" aria-labelledby="titulo-plataforma">
+  <div class="contenedor">
+    <div class="plataforma">
+      <div>
+        <span class="etiqueta">Protecta Vigía · en piloto</span>
+        <h2 id="titulo-plataforma">Un semáforo por proyecto, antes de radicar</h2>
+        <p class="entrada">Nuestra plataforma de control SST-MA multiproyecto muestra qué está al día, qué falta y quién lo debe entregar.</p>
+        <ul class="lista-check">
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8FD6C9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Tablero del director con todos los proyectos y su estado.</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8FD6C9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Personal del periodo, matriz documental y aportes en un solo lugar.</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8FD6C9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Evidencias revisadas y observaciones con responsable.</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8FD6C9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Informe mensual en Word o PDF.</li>
+        </ul>
+        <p class="nota-hibrida"><strong>Sus documentos no salen de su Microsoft 365.</strong> La plataforma guarda estados, aprobaciones y referencias a los archivos, no copias.</p>
+      </div>
+      <figure class="tablero" style="margin:0" aria-label="Vista ilustrativa del tablero, con datos ficticios">
+        <div class="tablero-cabeza"><b>Tablero del director</b><span>Periodo de ejemplo</span></div>
+        <div class="resumen">
+          <div><b>1</b><span>Listo para radicar</span></div>
+          <div><b>1</b><span>Con faltantes</span></div>
+          <div><b>1</b><span>En riesgo</span></div>
+        </div>
+        <div class="fila"><span class="luz v" aria-hidden="true"></span><div><div class="p">Proyecto A · Vía</div><div class="d">Todo el personal con soportes</div></div><span class="estado v">Listo</span></div>
+        <div class="fila"><span class="luz a" aria-hidden="true"></span><div><div class="p">Proyecto B · Edificación</div><div class="d">4 documentos pendientes</div></div><span class="estado a">Faltantes</span></div>
+        <div class="fila"><span class="luz r" aria-hidden="true"></span><div><div class="p">Proyecto C · Redes</div><div class="d">Aportes sin verificar</div></div><span class="estado r">En riesgo</span></div>
+        <figcaption class="pie-tablero">Vista ilustrativa con datos ficticios.</figcaption>
+      </figure>
+    </div>
+    <div class="pilotos">
+      <div>
+        <h3>Programa de pilotos fundadores</h3>
+        <p>Cupos limitados para interventorías y constructoras que quieran empezar en el primer trimestre de 2027, con acompañamiento directo de nuestro equipo.</p>
+      </div>
+      <a class="boton boton-claro" href="mailto:protectaserv.col@gmail.com?subject=Programa%20de%20pilotos%20fundadores">Quiero ser piloto</a>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="como-trabajamos" aria-labelledby="titulo-pasos">
+  <div class="contenedor">
+    <div class="cabeza">
+      <p class="antetitulo">Cómo trabajamos</p>
+      <h2 id="titulo-pasos">Cuatro pasos, un mismo estándar</h2>
+    </div>
+    <ol class="pasos">
+      <li class="paso"><h3>Conversación inicial</h3><p>Entendemos sus proyectos, su entidad contratante y cómo reporta hoy.</p></li>
+      <li class="paso"><h3>Diagnóstico</h3><p>Identificamos faltantes y riesgos, y acordamos prioridades.</p></li>
+      <li class="paso"><h3>Organización y control</h3><p>Ordenamos la información y hacemos seguimiento cada periodo.</p></li>
+      <li class="paso"><h3>Informe y mejora</h3><p>Entregamos el informe consolidado y ajustamos lo que se repite.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="seccion seccion-gris" id="equipo" aria-labelledby="titulo-equipo">
+  <div class="contenedor">
+    <div class="cabeza">
+      <p class="antetitulo">Equipo</p>
+      <h2 id="titulo-equipo">Experiencia en campo y en tecnología</h2>
+    </div>
+    <div class="equipo">
+      <article class="persona">
+        <div class="iniciales" aria-hidden="true">VA</div>
+        <div>
+          <h3>Viviana Aldana</h3>
+          <p class="rol">Cofundadora · Dirección SST-MA</p>
+          <p>Profesional en seguridad y salud en el trabajo, especialista ambiental y auditora interna, con experiencia en grandes interventorías y constructoras. Diseña el Modelo Protecta: la estructura estándar de control e informe SST-MA.</p>
+        </div>
+      </article>
+      <article class="persona">
+        <div class="iniciales b" aria-hidden="true">BD</div>
+        <div>
+          <h3>Brian Daza</h3>
+          <p class="rol">Cofundador · Tecnología</p>
+          <p>Ingeniero de sistemas y tecnólogo electrónico, con 12 años en operación de tecnología y liderazgo de equipos. Dirige la plataforma y la seguridad de la información.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="contacto" aria-labelledby="titulo-contacto">
+  <div class="contenedor">
+    <div class="contacto">
+      <div>
+        <h2 id="titulo-contacto">Hablemos de sus proyectos</h2>
+        <p>Cuéntenos cuántos proyectos maneja y para qué entidad reporta. Le respondemos con una propuesta para empezar.</p>
+      </div>
+      <div class="datos">
+        <a class="boton boton-claro" href="mailto:protectaserv.col@gmail.com?subject=Consulta%20desde%20el%20sitio%20web">Escribir un correo</a>
+        <a class="correo" href="mailto:protectaserv.col@gmail.com">protectaserv.col@gmail.com</a>
+        <span class="lugar">Bogotá, Colombia</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div>
+      <a class="marca" href="#inicio" aria-label="Volver al inicio">
+        <svg width="28" height="33" viewBox="0 0 120 140" aria-hidden="true">
+          <path d="M60 6 L108 24 V66 C108 98 86 122 60 134 C34 122 12 98 12 66 V24 Z" fill="#12263A"/>
+          <path d="M34 70 A26 26 0 0 1 86 70 Z" fill="#1C8EA8"/>
+          <path d="M60 120 C40 110 38 90 60 82 C82 90 80 110 60 120 Z" fill="#47A84C"/>
+        </svg>
+        <span class="nombre" style="font-size:17px">PROTECTA</span>
+      </a>
+      <small style="margin-top:12px">© 2026 Protecta Consulting SST-MA · Bogotá, Colombia</small>
+    </div>
+    <p class="datos-personales"><strong>Tratamiento de datos personales.</strong> Este sitio no usa formularios ni cookies propias. Si nos escribe, usamos sus datos solo para responder su consulta, conforme a la Ley 1581 de 2012. Puede pedir que los actualicemos o eliminemos escribiendo a <a href="mailto:protectaserv.col@gmail.com">protectaserv.col@gmail.com</a>.</p>
+  </div>
+</footer>
+</body>
+</html>
