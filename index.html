@@ -3,20 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Protecta Consulting SST-MA · Consultoría SST y ambiental para interventoría y construcción</title>
+<title>MASEGTRA · Consultoría SST y ambiental para interventoría y construcción</title>
 <meta name="description" content="Consultoría en seguridad y salud en el trabajo (SST) y medio ambiente (MA) para interventorías y constructoras en Colombia. Organizamos la información, controlamos el cumplimiento cada mes y preparamos el informe para la entidad.">
 <meta name="theme-color" content="#12263A">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Protecta Consulting SST-MA">
+<meta property="og:title" content="MASEGTRA · Medio Ambiente, Seguridad y Trabajo">
 <meta property="og:description" content="Cada proyecto en regla, antes de que llegue el informe. Consultoría SST-MA para interventoría y construcción.">
 <meta property="og:locale" content="es_CO">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap">
 <style>
 :root{
-  --noche:#12263A; --noche-2:#1B3550; --sst:#1C8EA8; --sst-texto:#11697D; --ma:#47A84C; --ma-texto:#2F7D34;
+  --noche:#1B395F; --noche-2:#24497A; --sst:#F47A1F; --sst-texto:#B4510C; --ma:#0A8D6B; --ma-texto:#08765A;
   --fondo:#F6F8F7; --blanco:#FFFFFF; --linea:#DDE3E7; --texto:#1E2B36; --suave:#4A5A68;
   --ambar:#B7791F; --rojo:#C0392B;
   --radio:14px; --ancho:1160px;
@@ -40,7 +41,8 @@ p{margin:0}
 .encabezado .contenedor{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
 .marca{display:flex;align-items:center;gap:12px;text-decoration:none}
 .marca .nombre{font-family:var(--titulos);font-weight:800;letter-spacing:.04em;color:var(--noche);font-size:20px;line-height:1}
-.marca .sub{font-family:var(--titulos);font-weight:600;letter-spacing:.28em;color:var(--ma-texto);font-size:9.5px;margin-top:4px;display:block}
+.marca .sub{font-family:var(--titulos);font-weight:600;letter-spacing:.12em;color:var(--suave);font-size:8.5px;margin-top:4px;display:block}
+.marca img{display:block;height:28px;width:auto}
 .nav{display:flex;align-items:center;gap:28px}
 .nav a{font-family:var(--titulos);font-weight:600;font-size:15px;color:var(--texto);text-decoration:none}
 .nav a:hover{color:var(--sst-texto)}
@@ -64,7 +66,7 @@ p{margin:0}
 .sello{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:40px;color:var(--suave);font-size:15px}
 .sello span{display:flex;align-items:center;gap:8px}
 .sello svg{flex:none}
-.escudo-grande{justify-self:center;width:min(320px,70%)}
+.escudo-grande{justify-self:center;width:min(460px,100%);height:auto}
 
 /* Secciones */
 section{scroll-margin-top:80px}
@@ -76,14 +78,14 @@ section{scroll-margin-top:80px}
 .cabeza h2{font-size:clamp(28px,3.4vw,40px);font-weight:800}
 .cabeza p{margin-top:16px;color:var(--suave);font-size:19px}
 .seccion-oscura .cabeza p{color:#B8C7D3}
-.seccion-oscura .antetitulo{color:#8FD6C9}
+.seccion-oscura .antetitulo{color:#F9A766}
 
 /* Problema */
 .tres{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .dolor{padding:28px;border-radius:var(--radio);background:#fff;border:1px solid var(--linea)}
 .dolor h3{font-size:19px;margin:16px 0 8px}
 .dolor p{color:var(--suave);font-size:17px}
-.icono{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#E6F2F5;color:var(--sst-texto)}
+.icono{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#FDEEE3;color:var(--sst-texto)}
 .icono.verde{background:#E7F3E8;color:var(--ma-texto)}
 
 /* Servicios */
@@ -97,13 +99,11 @@ section{scroll-margin-top:80px}
 
 /* Plataforma */
 .plataforma{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.vigia-marca{display:inline-flex;align-items:center;gap:12px;background:#fff;border-radius:16px;padding:10px 18px 10px 14px;margin-bottom:20px}
-.vigia-marca span{font-family:var(--titulos);font-weight:800;font-size:26px;color:var(--noche);letter-spacing:.08em}
-.vigia-marca small{font-family:var(--cuerpo);font-size:15px;color:var(--suave);border-left:1px solid var(--linea);padding-left:12px;margin-left:2px}
-.vigia-marca small i{font-style:normal;font-weight:600;color:var(--noche)}
-.vigia-marca + .etiqueta{display:flex;width:max-content}
-.etiqueta{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:rgba(143,214,201,.14);color:#8FD6C9;font-family:var(--titulos);font-weight:700;font-size:13px;letter-spacing:.06em}
-.etiqueta::before{content:"";width:8px;height:8px;border-radius:50%;background:#8FD6C9}
+.vigia-marca{display:inline-flex;align-items:center;background:#fff;border-radius:16px;padding:14px 20px;margin-bottom:20px}
+.vigia-marca img{display:block;height:44px;width:auto}
+.vigia-marca + .etiqueta{display:flex;width:max-content;max-width:100%}
+.etiqueta{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:rgba(249,167,102,.16);color:#F9A766;font-family:var(--titulos);font-weight:700;font-size:13px;letter-spacing:.06em}
+.etiqueta::before{content:"";width:8px;height:8px;border-radius:50%;background:#F9A766}
 .plataforma h2{font-size:clamp(28px,3.4vw,40px);font-weight:800;margin-top:18px}
 .plataforma .entrada{margin-top:16px;color:#B8C7D3;font-size:19px}
 .lista-check{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:14px}
@@ -169,7 +169,7 @@ section{scroll-margin-top:80px}
 @media (max-width:980px){
   .nav a:not(.boton){display:none}
   .portada .contenedor,.plataforma,.contacto{grid-template-columns:1fr}
-  .escudo-grande{width:120px;justify-self:start;order:-1}
+  .escudo-grande{width:min(300px,80%);justify-self:start;order:-1}
   .tres{grid-template-columns:1fr}
   .pasos{grid-template-columns:repeat(2,1fr);row-gap:40px}
   .paso:nth-child(2)::after{display:none}
@@ -200,9 +200,9 @@ section{scroll-margin-top:80px}
 
 <header class="encabezado">
   <div class="contenedor">
-    <a class="marca" href="#inicio" aria-label="Protecta Consulting SST-MA, inicio">
-      <svg width="34" height="38" viewBox="8 6 104 116" aria-hidden="true"><path d="M20 112 V58 A40 40 0 1 1 85.7 88.6" fill="none" stroke="#12263A" stroke-width="22"/><circle cx="60" cy="58" r="16" fill="#1C8EA8"/><path d="M44 83 Q60 90 76 83 V104 Q76 120 60 120 H44 Z" fill="#47A84C"/></svg>
-      <span><span class="nombre">PROTECTA</span><span class="sub">CONSULTING SST-MA</span></span>
+    <a class="marca" href="#inicio" aria-label="MASEGTRA, inicio">
+      <img src="masegtra-simbolo.png" width="64" height="28" alt="">
+      <span><span class="nombre">MASEGTRA</span><span class="sub">MEDIO AMBIENTE · SEGURIDAD · TRABAJO</span></span>
     </a>
     <nav class="nav" aria-label="Secciones">
       <a href="#servicios">Servicios</a>
@@ -223,16 +223,16 @@ section{scroll-margin-top:80px}
       <h1 id="titulo-portada">Cada proyecto en regla, <em>antes de que llegue el informe.</em></h1>
       <p class="entrada">Acompañamos a interventorías y constructoras en la gestión de seguridad y salud en el trabajo (SST) y medio ambiente (MA): organizamos la información, controlamos el cumplimiento cada mes y dejamos listo el informe para la entidad contratante.</p>
       <div class="acciones">
-        <a class="boton boton-primario" href="mailto:protectaserv.col@gmail.com?subject=Quiero%20conversar%20sobre%20mis%20proyectos">Agendar una conversación</a>
+        <a class="boton boton-primario" href="mailto:contacto@masegtra.com?subject=Quiero%20conversar%20sobre%20mis%20proyectos">Agendar una conversación</a>
         <a class="boton boton-borde" href="#servicios">Ver servicios</a>
       </div>
       <div class="sello">
-        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F7D34" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>SST y ambiental en un solo equipo</span>
-        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F7D34" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Varios proyectos a la vez</span>
-        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F7D34" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Sus documentos se quedan en su nube</span>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#08765A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>SST y ambiental en un solo equipo</span>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#08765A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Varios proyectos a la vez</span>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#08765A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Sus documentos se quedan en su nube</span>
       </div>
     </div>
-    <svg class="escudo-grande" viewBox="8 6 104 116" role="img" aria-label="Símbolo de Protecta: una P que protege a una persona"><path d="M20 112 V58 A40 40 0 1 1 85.7 88.6" fill="none" stroke="#12263A" stroke-width="22"/><circle cx="60" cy="58" r="16" fill="#1C8EA8"/><path d="M44 83 Q60 90 76 83 V104 Q76 120 60 120 H44 Z" fill="#47A84C"/></svg>
+    <img class="escudo-grande" src="masegtra-logo.png" width="900" height="420" alt="MASEGTRA: Medio Ambiente, Seguridad, Trabajo">
   </div>
 </section>
 
@@ -315,15 +315,15 @@ section{scroll-margin-top:80px}
   <div class="contenedor">
     <div class="plataforma">
       <div>
-        <div class="vigia-marca"><svg width="64" height="34" viewBox="0 8 120 64" aria-hidden="true"><path d="M6 40 Q60 -18 114 40 Q60 2 6 40 Z" fill="#12263A"/><path d="M6 40 Q60 98 114 40 Q60 78 6 40 Z" fill="#12263A"/><circle cx="60" cy="40" r="17" fill="#12263A"/><circle cx="60" cy="30" r="4.4" fill="#47A84C"/><circle cx="60" cy="40" r="4.4" fill="#E0A526"/><circle cx="60" cy="50" r="4.4" fill="#C0392B"/></svg><span>VGIA</span><small>se dice <i>vigía</i></small></div>
-        <span class="etiqueta">Protecta VGIA · en piloto</span>
+        <div class="vigia-marca"><img src="ukan-logo.png" width="700" height="205" alt="UKAN"></div>
+        <span class="etiqueta">UKAN · plataforma de MASEGTRA · en piloto</span>
         <h2 id="titulo-plataforma">Un semáforo por proyecto, antes de radicar</h2>
         <p class="entrada">Nuestra plataforma de control SST-MA multiproyecto muestra qué está al día, qué falta y quién lo debe entregar.</p>
         <ul class="lista-check">
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8FD6C9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Tablero del director con todos los proyectos y su estado.</li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8FD6C9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Personal del periodo, matriz documental y aportes en un solo lugar.</li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8FD6C9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Evidencias revisadas y observaciones con responsable.</li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8FD6C9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Informe mensual en Word o PDF.</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F9A766" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Tablero del director con todos los proyectos y su estado.</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F9A766" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Personal del periodo, matriz documental y aportes en un solo lugar.</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F9A766" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Evidencias revisadas y observaciones con responsable.</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F9A766" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Informe mensual en Word o PDF.</li>
         </ul>
         <p class="nota-hibrida"><strong>Sus documentos no salen de su Microsoft 365.</strong> La plataforma guarda estados, aprobaciones y referencias a los archivos, no copias.</p>
       </div>
@@ -345,7 +345,7 @@ section{scroll-margin-top:80px}
         <h3>Programa de pilotos fundadores</h3>
         <p>Cupos limitados para interventorías y constructoras que quieran empezar en el primer trimestre de 2027, con acompañamiento directo de nuestro equipo.</p>
       </div>
-      <a class="boton boton-claro" href="mailto:protectaserv.col@gmail.com?subject=Programa%20de%20pilotos%20fundadores">Quiero ser piloto</a>
+      <a class="boton boton-claro" href="mailto:contacto@masegtra.com?subject=Programa%20de%20pilotos%20fundadores">Quiero ser piloto</a>
     </div>
   </div>
 </section>
@@ -377,7 +377,7 @@ section{scroll-margin-top:80px}
         <div>
           <h3>Viviana Aldana</h3>
           <p class="rol">Cofundadora · Dirección SST-MA</p>
-          <p>Profesional en seguridad y salud en el trabajo, especialista ambiental y auditora interna, con experiencia en grandes interventorías y constructoras. Diseña el Modelo Protecta: la estructura estándar de control e informe SST-MA.</p>
+          <p>Profesional en Seguridad y Salud en el Trabajo con licencia vigente desde 2017, especialista en SST y tecnóloga en control ambiental. Auditora interna en ISO 9001, ISO 45001 e ISO 14001. Nueve años en construcción, principalmente en interventorías de obra pública, como inspectora, residente y especialista SST-MA. Diseña el Modelo MASEGTRA: la estructura estándar de control e informe SST-MA.</p>
         </div>
       </article>
       <article class="persona">
@@ -400,8 +400,8 @@ section{scroll-margin-top:80px}
         <p>Cuéntenos cuántos proyectos maneja y para qué entidad reporta. Le respondemos con una propuesta para empezar.</p>
       </div>
       <div class="datos">
-        <a class="boton boton-claro" href="mailto:protectaserv.col@gmail.com?subject=Consulta%20desde%20el%20sitio%20web">Escribir un correo</a>
-        <a class="correo" href="mailto:protectaserv.col@gmail.com">protectaserv.col@gmail.com</a>
+        <a class="boton boton-claro" href="mailto:contacto@masegtra.com?subject=Consulta%20desde%20el%20sitio%20web">Escribir un correo</a>
+        <a class="correo" href="mailto:contacto@masegtra.com">contacto@masegtra.com</a>
         <span class="lugar">Bogotá, Colombia</span>
       </div>
     </div>
@@ -414,12 +414,12 @@ section{scroll-margin-top:80px}
   <div class="contenedor">
     <div>
       <a class="marca" href="#inicio" aria-label="Volver al inicio">
-        <svg width="28" height="31" viewBox="8 6 104 116" aria-hidden="true"><path d="M20 112 V58 A40 40 0 1 1 85.7 88.6" fill="none" stroke="#12263A" stroke-width="22"/><circle cx="60" cy="58" r="16" fill="#1C8EA8"/><path d="M44 83 Q60 90 76 83 V104 Q76 120 60 120 H44 Z" fill="#47A84C"/></svg>
-        <span class="nombre" style="font-size:17px">PROTECTA</span>
+        <img src="masegtra-simbolo.png" width="55" height="24" alt="" style="height:24px">
+        <span class="nombre" style="font-size:17px">MASEGTRA</span>
       </a>
-      <small style="margin-top:12px">© 2026 Protecta Consulting SST-MA · Bogotá, Colombia</small>
+      <small style="margin-top:12px">© 2026 MASEGTRA · Bogotá, Colombia</small>
     </div>
-    <p class="datos-personales"><strong>Tratamiento de datos personales.</strong> Este sitio no usa formularios ni cookies propias. Si nos escribe, usamos sus datos solo para responder su consulta, conforme a la Ley 1581 de 2012. Puede pedir que los actualicemos o eliminemos escribiendo a <a href="mailto:protectaserv.col@gmail.com">protectaserv.col@gmail.com</a>.</p>
+    <p class="datos-personales"><strong>Tratamiento de datos personales.</strong> Este sitio no usa formularios ni cookies propias. Si nos escribe, usamos sus datos solo para responder su consulta, conforme a la Ley 1581 de 2012. Puede pedir que los actualicemos o eliminemos escribiendo a <a href="mailto:contacto@masegtra.com">contacto@masegtra.com</a>.</p>
   </div>
 </footer>
 </body>

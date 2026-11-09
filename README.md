@@ -1,9 +1,9 @@
-# Sitio web de Protecta Consulting SST-MA
+# Sitio web de MASEGTRA
 
-Sitio estático de una sola página, publicado con GitHub Pages en https://protecta-sstma.github.io.
+Sitio estático de una sola página, publicado con GitHub Pages en https://masegtra.com.
 
 - `index.html`: todo el sitio (HTML y CSS en un solo archivo, sin JavaScript ni formularios).
-- `favicon.svg`: ícono del navegador.
+- `favicon.png`, `apple-touch-icon.png` e imágenes `masegtra-*.png`, `ukan-logo.png`: marca.
 - `.nojekyll`: GitHub Pages publica los archivos tal cual, sin procesarlos.
 
 Este repositorio es **público**: aquí solo va el sitio. Nada de secretos, datos de clientes ni código de CCA.
